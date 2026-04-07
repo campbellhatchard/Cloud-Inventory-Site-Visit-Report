@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: site-visit-report
-    env: python
-    plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"
-    healthCheckPath: "/"
